@@ -1,6 +1,6 @@
-# Input:Date
+# Gauge
 
-La tuile de type display permet d'afficher du texte ou du HTML. Avec cette tuile vous pouvez par exemple:
+La tuile de type scatter permet d'afficher du texte ou du HTML. Avec cette tuile vous pouvez par exemple:
  * Afficher la derniere valeur d'une variable/GTS
  * Afficher le resultat d'une macro
  * Générer un lien hypertexte
@@ -11,11 +11,15 @@ La tuile de type display permet d'afficher du texte ou du HTML. Avec cette tuile
 
 ### Exemple d'affichage d'une variable/GTS
 
-<div style="width: 200px; height:250px;">
-<discovery-tile url="https://sandbox.senx.io/api/v0/exec" type="input:date">
-    { 'data' NOW 'events' [
-    { 'type' 'variable' 'tags' 'myVar' 'selector' 'myVar' }
-    ] }
+<div style="width: 700px; height:300px;">
+<discovery-tile url="https://sandbox.senx.io/api/v0/exec" type="scatter">
+    1 4 <% DROP 
+    NEWGTS 'g' STORE
+    1 10 <% 'ts' STORE 
+        $g $ts RAND + STU * NOW + NaN NaN NaN RAND ADDVALUE DROP 
+    %> FOR
+    $g 
+    %> FOR 
 </discovery-tile>
 </div>
 

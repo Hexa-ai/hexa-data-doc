@@ -1,58 +1,75 @@
 # Line
 
-La tuile de type display permet d'afficher du texte ou du HTML. Avec cette tuile vous pouvez par exemple:
- * Afficher la derniere valeur d'une variable/GTS
+La tuile de type line permet d'afficher des courbes. Avec cette tuile vous pouvez par exemple:
+ * Afficher une ou plusieurs courbe(s) d'une ou plusieurs variable(s)/GTS
  * Afficher le resultat d'une macro
- * Générer un lien hypertexte
- * Afficher une image avec la balise HTML ```<img/>```.
 
+## Afficher une ou plusieurs courbe(s) d'une ou plusieurs variable(s)/GTS
 
-## Afficher la dernière valeur d'une variable/GTS
+### Exemple d'affichage de 2 courbes
 
-### Exemple d'affichage d'une variable/GTS
 
 <div style="width: 700px; height:300px;">
 <discovery-tile url="https://sandbox.senx.io/api/v0/exec" type="line">
-1 2 <% 
-  'i' STORE NEWGTS 'data-' $i TOSTRING + RENAME 'g' STORE
+NEWGTS 'edgeDemo.r1.mesu.temp.salon' RENAME 'g' STORE
   1 10 <% 'ts' STORE $g $ts RAND + STU * NOW + NaN NaN NaN RAND ADDVALUE DROP %> FOR
   $g
-%> FOR STACKTOLIST 'data' STORE
-{ 'data' $data 'globalParams' {  'showLegend' true } }
+
+NEWGTS 'dgeDemo.r1.cons.temp.salon' RENAME 'g' STORE
+  1 10 <% 'ts' STORE $g $ts RAND + STU * NOW + NaN NaN NaN RAND ADDVALUE DROP %> FOR
+  $g
+
+
+
+STACKTOLIST 'data' STORE
+{ 'data' $data 'globalParams' {  'showLegend' true 'scheme' 'ECTOPLASM' } }
 </discovery-tile>
+</div>
 
 ### Script
 
+Dans cette exemple:
+
+* La variable interne ```$readToken``` (jeton d'identification)
+
+* Les variables de données qu'on souhaite afficher ```edgeDemo.r1.mesu.temp.salon``` et ```dgeDemo.r1.cons.temp.salon```
+
+* La plage de requete (les 24 dernières heures):
+   * ```'start' NOW 1 d -``` (timestamp actuel moin 1 jour)
+   * ```'end' NOW``` (timestamp actuel)
+
 <div style="min-height: 300px; width: 800px;">
-<warp-view-editor url="https://warp.senx.io/api/v0/exec" width-px=800 theme="dark" id="editor horizontal-layout="false" show-result="false" show-execute="false" > 
+<warp-view-editor url="https://warp.senx.io/api/v0/exec" width-px=800 theme="dark" id="editor horizontal-layout="false" show-result="false" show-execute="false" >
+{ 
+  'token' $readToken 
+  'class' '~edgeDemo.r1.mesu.temp.salon|edgeDemo.r1.cons.temp.salon' 
+  'labels' {}
+  'start' NOW 1 d -
+  'end' NOW
+} FETCH 'data' STORE
 
-    // Requète de récupération des données (FETCH)
-    { 
-        'token' $readToken //Jeton de lecture
-        'class' 'edgeDemo.r2.mesu.temp.chAdam' //Nom de la variable/GTS à récupèrer
-        'labels' {} 
-        'end' NOW 4 h + 
-        'count' 1 
-    } FETCH  0 GET VALUES 0 GET 'data' STORE 
-
-    // Contenu de la tuile
-    { 
-        'data' $data 
-        'globalParams' { 'unit' '°C' }
-    }
+{ 'data' $data 'globalParams' {  'showLegend' true 'scheme' 'ECTOPLASM' } }
 
 </warp-view-editor>
 </div>
 
+
+## Afficher le resultat d'une macro
+
 ### Exemple d'affichage d'une macro
 
-<div style="width: 200px; height:250px;">
+<div style="width: 700px; height:300px;">
 <discovery-tile url="https://sandbox.senx.io/api/v0/exec" type="line">
-<% 'coef' STORE 523 5 + $coef * %> 'demoMacro' STORE
-{
-    'data' 12 @demoMacro
-    'globalParams' { 'unit' '°C' }
-}
+NEWGTS 'edgeDemo.r1.mesu.temp.salon' RENAME 'g' STORE
+  1 10 <% 'ts' STORE $g $ts RAND + STU * NOW + NaN NaN NaN RAND ADDVALUE DROP %> FOR
+  $g
+
+NEWGTS 'dgeDemo.r1.cons.temp.salon' RENAME 'g' STORE
+  1 10 <% 'ts' STORE $g $ts RAND + STU * NOW + NaN NaN NaN RAND ADDVALUE DROP %> FOR
+  $g
+
+STACKTOLIST 'data' STORE
+{ 'data' $data 'globalParams' {  'showControls' true 'showLegend' true 'scheme' 'ECTOPLASM' } }
 </discovery-tile>
 </div>
 
@@ -60,13 +77,19 @@ La tuile de type display permet d'afficher du texte ou du HTML. Avec cette tuile
 
 <div style="min-height: 300px; width: 800px;">
 <warp-view-editor url="https://warp.senx.io/api/v0/exec" width-px=800 theme="dark" id="editor horizontal-layout="false" show-result="false" show-execute="false" > 
-// Definition de la macro
-<% 'coef' STORE 523 5 + $coef * %> 'demoMacro' STORE
-
-// Contenu de la tuile
-{
-    'data' 12 @demoMacro
-    'globalParams' { 'unit' '°C' }
+<%
+  [
+    NEWGTS 'edgeDemo.r1.mesu.temp.salon' RENAME 'g' STORE
+    1 10 <% 'ts' STORE $g $ts RAND + STU * NOW + NaN NaN NaN RAND ADDVALUE DROP %> FOR
+    $g
+    NEWGTS 'dgeDemo.r1.cons.temp.salon' RENAME 'g' STORE
+    1 10 <% 'ts' STORE $g $ts RAND + STU * NOW + NaN NaN NaN RAND ADDVALUE DROP %> FOR
+    $g
+  ]
+%> 'maMacro' STORE
+{ 
+  'data' @maMacro
+  'globalParams' {  'showControls' true 'showLegend' true 'scheme' 'ECTOPLASM' } 
 }
 </warp-view-editor>
 </div>

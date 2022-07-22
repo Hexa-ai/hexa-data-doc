@@ -19,6 +19,7 @@ La tuile de type display permet d'afficher du texte ou du HTML. Avec cette tuile
     $g
     %> FOR
 </discovery-tile>
+</div>
 
 ### Script
 

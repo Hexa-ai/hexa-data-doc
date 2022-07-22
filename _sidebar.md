@@ -19,3 +19,5 @@
         * [   - Input_text](./Dashboards/Continuum/input_text.md)
         * [   - Input_date](./Dashboards/Continuum/input_date.md)
         * [   - Annotation ](./Dashboards/Continuum/annotation.md)
+        * [   - Pie ](./Dashboards/Continuum/pie.md)
+        * [   - Scatter ](./Dashboards/Continuum/scatter.md)

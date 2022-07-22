@@ -1,6 +1,6 @@
 # Input
 
-La tuile de type display permet d'afficher du texte ou du HTML. Avec cette tuile vous pouvez par exemple:
+La tuile de type input permet de rentrer du texte . Avec cette tuile vous pouvez par exemple:
  * Afficher la derniere valeur d'une variable/GTS
  * Afficher le resultat d'une macro
  * Générer un lien hypertexte
@@ -17,6 +17,7 @@ La tuile de type display permet d'afficher du texte ou du HTML. Avec cette tuile
     { 'type' 'variable' 'tags' 'myVar' 'selector' 'myVar' }
     ] }
 </discovery-tile>
+</div>
 
 ### Script
 

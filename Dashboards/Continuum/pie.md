@@ -1,6 +1,6 @@
-# Input:Date
+# Gauge
 
-La tuile de type display permet d'afficher du texte ou du HTML. Avec cette tuile vous pouvez par exemple:
+La tuile de type pie permet d'afficher du texte ou du HTML. Avec cette tuile vous pouvez par exemple:
  * Afficher la derniere valeur d'une variable/GTS
  * Afficher le resultat d'une macro
  * Générer un lien hypertexte
@@ -11,11 +11,11 @@ La tuile de type display permet d'afficher du texte ou du HTML. Avec cette tuile
 
 ### Exemple d'affichage d'une variable/GTS
 
-<div style="width: 200px; height:250px;">
-<discovery-tile url="https://sandbox.senx.io/api/v0/exec" type="input:date">
-    { 'data' NOW 'events' [
-    { 'type' 'variable' 'tags' 'myVar' 'selector' 'myVar' }
-    ] }
+<div style="width: 300px; height:300px;">
+<discovery-tile url="https://sandbox.senx.io/api/v0/exec" type="pie">
+        0 2 <% 'j' STORE
+        NEWGTS 'serie' $j TOSTRING + RENAME NOW NaN NaN NaN RAND ADDVALUE
+        %> FOR
 </discovery-tile>
 </div>
 
