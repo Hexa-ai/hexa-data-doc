@@ -3,13 +3,12 @@
 La tuile de type display permet d'afficher du texte ou du HTML. Avec cette tuile vous pouvez par exemple:
  * Afficher la derniere valeur d'une variable/GTS
  * Afficher le resultat d'une macro
+ * Afficher une variable en provenance d'un évènement
  * Générer un lien hypertexte
- * Afficher une image avec la balise HTML ```<img/>```.
-
+ * Afficher une image avec la balise HTML ```<img/>```
 
 ## Afficher la dernière valeur d'une variable/GTS
 
-### Exemple d'affichage d'une variable/GTS
 
 <div style="width: 200px; height:250px;">
 <discovery-tile url="https://sandbox.senx.io/api/v0/exec" type="display" chart-title="Température">
@@ -41,7 +40,7 @@ La tuile de type display permet d'afficher du texte ou du HTML. Avec cette tuile
 </warp-view-editor>
 </div>
 
-### Exemple d'affichage d'une macro
+## Exemple d'affichage d'une macro
 
 Pour cet example la macro est definie dans la tuile mais il peut aussi s'agire d'une macro du projet.
 
@@ -79,7 +78,32 @@ Dans cet example nous passons 12 en paramètre de la macro.
 </warp-view-editor>
 </div>
 
-### Exemple d'affichage d'un lien hypertexte
+## Afficher une variable en provenance d'un évenement
+
+La souscription à un évènement s'effectue grace au champs "EventHandler".
+
+ Ex:```type=variable,tag=saisieText```
+
+ L'attribut "Tag" permet de filtrer les évènements écoutés, dans ce cas nous ne recevons que les évenèments émis avec le "Tag" ```saisieText```
+
+ Exemple avec plusieurs tags: ```type=variable,tag=(saisieText|dateDebut)```
+
+ Dans l'exemple ci-dessous la variable ```$myVar``` correspond au nom de la variable envoyée par l'autre tuile.
+
+![eventHandlerDisplay](./_media/eventHandlerDisplay.png ':size=80%')
+
+### Script
+
+<div style="min-height: 100px; width: 800px;">
+<warp-view-editor url="https://warp.senx.io/api/v0/exec" width-px=800 theme="dark" id="editor horizontal-layout="false" show-result="false" show-execute="false" > 
+    // Contenu de la tuile display (afficher la valeur émise par la tuile input)
+  {
+    'data' $myVar
+  }
+</warp-view-editor>
+</div>
+
+## Exemple d'affichage d'un lien hypertexte
 
 <div style="width: 300px; height:250px;">
 <discovery-tile url="https://sandbox.senx.io/api/v0/exec" type="display">
@@ -104,7 +128,7 @@ Dans cet example nous passons 12 en paramètre de la macro.
 
 
 
-### Exemple d'affichage d'une image
+## Exemple d'affichage d'une image
 
 <div style="width: 300px; height:250px;">
 <discovery-tile url="https://sandbox.senx.io/api/v0/exec" type="display">
