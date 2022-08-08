@@ -1,4 +1,4 @@
-![logo](_media/logo.png)
+![logo](_media/logo.svg ':size=15%')
 
 # Hexa-data <small>par Hexa-AI</small>
 

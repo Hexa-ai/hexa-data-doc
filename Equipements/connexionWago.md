@@ -4,7 +4,7 @@ La connexion à Hexa-data depuis un automate WAGO se paramètre dans le WBM (Web
 
 Dans l'onglet ``Configuartion``, se rendre dans le menu ``Cloud Connectivity`` puis ``Connection 1``
 
-![alt](./_medias/navWbmWago.png)
+![alt](./_medias/navWbmWago.png ':size=70%')
 
 * Cocher ``Enabled``
 * Selectionner ``MQTT AnyCloud`` dans le champ ``Cloud plateform``
@@ -19,7 +19,7 @@ Dans l'onglet ``Configuartion``, se rendre dans le menu ``Cloud Connectivity`` p
 * Sélectionner ``Native MQTT`` dans le champs ``Data protocol``
 * Soumettre le formulaire et redémarrer l'automate pour prise en compte.
 
-![alt](./_medias/formWbmWago.png)
+![alt](./_medias/formWbmWago.png ':size=70%')
 
 
 
