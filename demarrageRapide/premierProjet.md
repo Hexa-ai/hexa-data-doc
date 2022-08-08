@@ -5,11 +5,11 @@
 Lorsque l'utilisateur connecté dispose des droits administrateur il peut créer autant de projets qu'il le souhaite depuis la page ```Projets```
 
 
-![créer un projet](./_media/creerProjet.png)
+![créer un projet](./_media/creerProjet.png ':size=70%')
 
 ## Remplir le formulaire de création
 
-![formulaire de création proejet](./_media/NouveauProjet.png)
+![formulaire de création proejet](./_media/NouveauProjet.png ':size=70%')
 
 ### Champs du formulaire de création
 
