@@ -2,10 +2,13 @@
 
 * Démarrage rapide
     * [   - Première connexion](/demarrageRapide/premiereConnexion.md)
+    * [   - Création du compte administrateur](/demarrageRapide/creationAdmin.md)
+    * [   - Premier projet](/demarrageRapide/premierProjet.md)
+    * [   - Connecter un équipement](/Equipements/ajout.md)
 
 * Equipements
-    * [   - Ajouter un équipement](/Equipements/ajout.md)
-    * [   - Format des messages MQTT](/Equipements/formatMqtt.md)
+    * [   - Ajout / modification / suppression](/Equipements/ajout.md)
+    * [   - Format HDM MQTT](/Equipements/formatMqtt.md)
     * [   - Connextion automate WAGO](/Equipements/connexionWago.md)
 
 * Variables

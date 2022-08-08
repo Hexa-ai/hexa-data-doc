@@ -5,6 +5,15 @@ Les équipements permettent de remonter des données dans Hexa-data. Un équipem
 * Disposer d'un client MQTT
 * Respecter le [formatage](./formatMqtt.md) attendu par Hexa-data
 
+## Bibliothèque officielles
+
+actuellement deux bibliothèques prètes à l'emploi sont disponibles.
+
+* Noeud Node-Red [node-red-contrib-hexa-data-connector](https://flows.nodered.org/node/@hexa-ai/node-red-contrib-hexa-data-connector)
+* Bibliothèque Codesys 3.5 / e!COCKPIT (WAGO Contact) [codesys-hexa-data-connector](https://gitlab.com/julien.talbourdet/codesys-hexa-data-connector/-/package_files/48610097/download)
+
+
+
 
 Pour ajouter un équipement il faut se rendre dans le menu ``Equipements`` d'un projet et cliquer sur le bouton d'ajout (en haut à droite).
 

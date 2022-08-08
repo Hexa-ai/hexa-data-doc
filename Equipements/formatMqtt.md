@@ -1,13 +1,27 @@
-# Communication MQTT
+# Format HDM MQTT
 
 La connexion avec les équipements s'effectue selon le protocole MQTT.
-Le protocole MQTT étant plutôt ouvert concernant le fomattage des données, nous avons donc défini un formatage performant et simple à implémenter
+Le protocole MQTT étant plutôt ouvert concernant le fomattage des données, nous avons donc défini un formatage performant et simple à implémenter HDM.
 
 ## Histrorical data metric format (HDM)
 
 HDM est un format ouvert developpé pour Hexa-data pour remonter des mesures horodatés dans l'application. Le format est basé sur JSON et permet de remonter des données horodatés par paquets de plusieurs mesures.
 
-### Exemple
+## Topic
+
+Les topic de messages MQTT s'assemble de la manière suivante:
+
+* Messages montants (de l'équipement vers Hexa-data): HD/[namespace]/up
+* Messages descendants (d'Hexa-data vers l'équipement): HD/[namespace]/down
+
+Lors de sa création dans Hexa-data un équipement se voit attribuer un ```namespace```. Ce```namespace``` est immutable et dérivé du nom initial donné à l'équipement.
+
+  Ex: L'équipement nommé "ma passerelle" disposera du ```maPasserelle```.
+
+
+![namespace](./_medias/namespace.png ':size=50%')
+
+### Exemple de payload
 
 ```
 {
