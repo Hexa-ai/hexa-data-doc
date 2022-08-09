@@ -16,7 +16,7 @@
         * [   - Connextion Node-Red](/Equipements/connexionNodeRed.md)
         * [   - Utilisation du noeud hd-up](/Equipements/NoeudNodeRed.md)
 
-* Variables
+* Variables / GTS
     * [   - Introduction](/Variables/introduction.md)
 * Tableau de bords
     * [   - Continuum](./Dashboards/Continuum/introduction.md)

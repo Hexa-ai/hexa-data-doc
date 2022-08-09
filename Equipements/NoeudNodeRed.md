@@ -1,7 +1,7 @@
 # Utilisation du noeud Node-Red
 
 Le noeud Node-Red s'installe directement depuis la palette Node-Red.
-Taper dans la barre de recherche ```@hexa-ai/node-red-contrib-hexa-data-connecto```
+Taper dans la barre de recherche ```@hexa-ai/node-red-contrib-hexa-data-connector```
 
 ![palette Node-Red](./_medias/paletteNodeRed.png ':size=50%')
 

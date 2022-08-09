@@ -1,8 +1,8 @@
 # Connexion Node-Red
 
-La connexion à Hexa-data depuis Node-Red se paramètre dans le MQTT Out.
+La connexion à Hexa-data depuis Node-Red se paramètre dans le noeud ```MQTT out```.
 
-* Les topic reprend la structure HD/[namespace]/up
+* Le topic reprend la structure HD/[namespace]/up
 * Le niveau de QOS doit être réglé sur 1.
 
 ![MQTT Out](./_medias/formNodeRed0.png ':size=50%')
@@ -15,6 +15,6 @@ La connexion à Hexa-data depuis Node-Red se paramètre dans le MQTT Out.
 
 ?> _Important_ Si la connexion necessite d'être sécurisée, choisir le port 8883 et cocher la case ```Use TLS```
 
-* Saisir ensuite l'identifiant ainsi que le mot de passe déclarés dans Hexa-data.
+* Saisir ensuite l'identifiant ainsi que le mot de passe déclaré dans Hexa-data.
 
 ![Connexion MQTT Node-Red](./_medias/formNodeRed2.png ':size=50%')
