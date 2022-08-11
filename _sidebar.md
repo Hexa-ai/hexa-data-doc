@@ -18,6 +18,12 @@
 
 * Variables / GTS
     * [   - Introduction](/Variables/introduction.md)
+    * [   - Ajout / édition](/Variables/ajout.md)
+    * [   - Visualiser les valeurs](/Variables/visualiser.md)
+* Macros
+    * [   - Introduction](/Macros/introduction.md)
+    * [   - Ajout / édition](/Macros/ajout.md)
+    * [   - Variables spéciales](/Macros/variablesProjet.md)
 * Tableau de bords
     * [   - Continuum](./Dashboards/Continuum/introduction.md)
         * [   - Display](./Dashboards/Continuum/display.md)

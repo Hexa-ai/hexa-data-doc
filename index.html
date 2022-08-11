@@ -20,10 +20,44 @@
       name: 'Documentation Hexa-data',
       coverpage: true,
       loadNavbar:true,
-      loadSidebar:true
+      loadSidebar:true,
+
+      search : [
+      '/',            // => /README.md
+      '/guide',       // => /guide.md
+      '/get-started', // => /get-started.md
+      '/zh-cn/',      // => /zh-cn/README.md
+    ],
+
+    // complete configuration parameters
+    search: {
+      maxAge: 86400000, // Expiration time, the default one day
+      paths: 'auto', // or 'auto'
+      placeholder: 'Saisir votre recherche',
+
+      
+
+      noData: 'Aucun résultats!',
+
+
+
+      // Headline depth, 1 - 6
+      depth: 4,
+
+      hideOtherSidebarContent: true, // whether or not to hide other sidebar content
+
+      // Use different indexes for path prefixes (namespaces).
+      // NOTE: Only works in 'auto' mode.
+      //
+      // When initialiazing an index, we look for the first path from the sidebar.
+      // If it matches the prefix from the list, we switch to the corresponding index.
+      pathNamespaces: ['/'],
+
+    }
     }
   </script>
   <!-- Docsify v4 -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
 </body>
 </html>
