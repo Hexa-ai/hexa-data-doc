@@ -9,7 +9,7 @@ Taper dans la barre de recherche ```@hexa-ai/node-red-contrib-hexa-data-connecto
 
 ![flow Node-Red](./_medias/flowNodeRed.png ':size=70%')
 
-* Le Noeud ```Echantillonnage``` Permet dans cet exemple de cadencer l'échantillonage de valeurs. Il s'agit d'un noeud Inject à execution cyclique (Ex: 200ms).
+* Le Noeud ```Echantillonnage``` permet, dans cet exemple, de cadencer l'échantillonage de valeurs. Il s'agit d'un noeud ```Inject``` à éxécution cyclique (Ex: 200ms).
 
 * Les noeuds ```Pression``` et ```Température``` décrivent la variable à remonter.
 
@@ -23,7 +23,7 @@ Taper dans la barre de recherche ```@hexa-ai/node-red-contrib-hexa-data-connecto
     * Le champ ```name``` du payload correspond au nom de la variable déclarée dans Hexa-data.
     * Le champ ```ts``` correspond au timestamp du système en micro-secondes.
     * Le champ ```value``` correspond à la valeur à envoyer.
-    * Le champs ```type``` correspond au type de la variable (```real```, ```integer```, ```boolean````, ```string```).
+    * Le champ ```type``` correspond au type de la variable (```real```, ```integer```, ```boolean```, ```string```).
 
 * Le Noeud ```hd-up``` gère le buffer et la mise en forme des messages pour Hexa-data.
-* Le Noeud ```mqtt out```est le client MQTT précedament paramètré.
+* Le Noeud ```mqtt out```est le client MQTT précedemment paramétré.

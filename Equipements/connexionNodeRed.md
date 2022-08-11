@@ -9,11 +9,11 @@ La connexion à Hexa-data depuis Node-Red se paramètre dans le noeud ```MQTT ou
 
 * L'adresse du serveur dépend de votre installation (addresse IP ou nom de domaine).
 
-* Le ClientID correspond à celui saisie dans le formaulaire de création d'Hexa-data.
+* Le ClientID correspond à celui saisi dans le formaulaire de création d'Hexa-data.
 
 ![Connexion MQTT Node-Red](./_medias/formNodeRed1.png ':size=50%')
 
-?> _Important_ Si la connexion necessite d'être sécurisée, choisir le port 8883 et cocher la case ```Use TLS```
+?> _Important_ Si la connexion nécessite d'être sécurisée, choisir le port 8883 et cocher la case ```Use TLS```
 
 * Saisir ensuite l'identifiant ainsi que le mot de passe déclaré dans Hexa-data.
 

@@ -2,7 +2,7 @@
 
 ## Créer le projet
 
-Lorsque l'utilisateur connecté dispose des droits administrateur il peut créer autant de projets qu'il le souhaite depuis la page ```Projets```
+Lorsque l'utilisateur connecté dispose des droits administrateur, il peut créer autant de projets qu'il le souhaite depuis la page ```Projets```
 
 
 ![créer un projet](./_media/creerProjet.png ':size=70%')

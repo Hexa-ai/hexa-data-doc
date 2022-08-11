@@ -1,22 +1,22 @@
 # Format HDM MQTT
 
 La connexion avec les équipements s'effectue selon le protocole MQTT.
-Le protocole MQTT étant plutôt ouvert concernant le fomattage des données, nous avons donc défini un formatage performant et simple à implémenter HDM.
+Le protocole MQTT étant plutôt ouvert, concernant le fomattage des données, nous avons donc défini un formatage performant et simple à implémenter : HDM.
 
 ## Histrorical data metric format (HDM)
 
-HDM est un format ouvert developpé pour Hexa-data pour remonter des mesures horodatés dans l'application. Le format est basé sur JSON et permet de remonter des données horodatés par paquets de plusieurs mesures.
+HDM est un format simple et ouvert, basé sur JSON, developpé pour Hexa-data pour remonter des mesures horodatées et par paquets de plusieurs mesures.
 
 ## Topic
 
-Les topic de messages MQTT s'assemble de la manière suivante:
+Les topic de messages MQTT s'assemblent de la manière suivante:
 
 * Messages montants (de l'équipement vers Hexa-data): HD/[namespace]/up
 * Messages descendants (d'Hexa-data vers l'équipement): HD/[namespace]/down
 
-Lors de sa création dans Hexa-data un équipement se voit attribuer un ```namespace```. Ce```namespace``` est immutable et dérivé du nom initial donné à l'équipement.
+Lors de sa création dans Hexa-data, un équipement se voit attribuer un ```namespace```. Ce```namespace``` est immuable et dérivé du nom initial donné à l'équipement.
 
-  Ex: L'équipement nommé "ma passerelle" disposera du ```maPasserelle```.
+  Ex: L'équipement nommé "ma passerelle" disposera du namespace ```maPasserelle```.
 
 
 ![namespace](./_medias/namespace.png ':size=50%')
@@ -65,7 +65,7 @@ Lors de sa création dans Hexa-data un équipement se voit attribuer un ```names
 
 ### Exemple pour un message descendant
 
-Les messages descendants n'on pour l'instant pas de formatage précis
+Les messages descendants n'ont pour l'instant pas de formatage précis. Nous préconisons l'utilisation d'un objet JSON avec des clés valeurs. 
 
 #### Topic
 
@@ -80,8 +80,8 @@ Les messages descendants n'on pour l'instant pas de formatage précis
 
 ## Traitement des messages MQTT
 
-Lorsqu'un nouveau message arrive, le service d'acquisition vérifie l'attribut de protocole avant de le traiter. Ce service valide également que les variables ont bien été déclarées dans l'application ainsi que le type de données remontées.
+Lorsqu'un nouveau message arrive, le service d'acquisition vérifie l'attribut ```protocol``` avant de le traiter. Ce service valide également la déclaration des variables dans l'application, ainsi que le type des données remontées.
 
 Afin d'offrir de bonnes performances, la liste des balises autorisées est mise à jour cycliquement (toutes les 10 secondes) et chargée en mémoire.
 
-Tous les messages autorisés sont alors empilés dans un buffer vidé cycliquement dans la base de données WARP10.
+Tous les messages autorisés sont alors empilés dans un buffer. Ce dernier est vidé cycliquement dans la base de données WARP10.

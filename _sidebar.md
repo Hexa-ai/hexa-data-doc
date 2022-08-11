@@ -10,7 +10,7 @@
     * [   - Ajout / modification / suppression](/Equipements/ajout.md)
     * [   - Format HDM MQTT](/Equipements/formatMqtt.md)
     * Automates Codesys 3.5
-        * [   - Connextion automate WAGO](/Equipements/connexionWago.md)
+        * [   - Connexion automate WAGO](/Equipements/connexionWago.md)
         * [   - Utilisation bibliothèque Codesys](/Equipements/bibliothèqueCodesys.md)
     * Node-Red
         * [   - Connextion Node-Red](/Equipements/connexionNodeRed.md)
@@ -24,7 +24,8 @@
     * [   - Introduction](/Macros/introduction.md)
     * [   - Ajout / édition](/Macros/ajout.md)
     * [   - Variables spéciales](/Macros/variablesProjet.md)
-* Tableau de bords
+* Tableau de bord
+    * [   - Introduction](./Dashboards/introduction.md)
     * [   - Continuum](./Dashboards/Continuum/introduction.md)
         * [   - Display](./Dashboards/Continuum/display.md)
         * [   - Line](./Dashboards/Continuum/line.md)

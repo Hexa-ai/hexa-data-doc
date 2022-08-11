@@ -4,7 +4,7 @@ Après la premiere connexion, se rendre dans le menu utilisateur de l'applicatio
 
 ![utilisateurs](./_media/changeMotDePasse.png ':size=70%')
 
-Penser à cocher la case ```Administrateur```. Ce rôle donne tout les droits sur l'application et les projets.
+Penser à cocher la case ```Administrateur```. Ce rôle donne tous les droits sur l'application et les projets.
 
 ![fomulaire utilisateur](./_media/formulaireUtilisateur.png ':size=70%')
 
