@@ -1,26 +1,24 @@
 # Les variables du projet
 
-Lors de l'éxécution des script, Hexa-data ajoute quelques variables pour symplifier son utilisation ou étendre les possibilités.
+Lors de l'éxécution des script, Hexa-data ajoute quelques variables pour simplifier son utilisation ou étendre les possibilités.
 
 ## Les jetons
 
-La lecture et l'écriture dans une base de donnée Warp10 est conditionnée par l'usage de jetons.
+La lecture et l'écriture dans une base de donnée Warp10 sont conditionnées par l'usage de jetons.
 
 Chaque jeton dispose de droits permettant:
 
-* De cloisonner l'accès au variables / GTS.
+* De cloisonner l'accès aux variables / GTS.
 * De définir le type accès (lecture ou écriture)
-* De limiter l'accès aux donées dans le temps.
+* De limiter l'accès aux données dans le temps.
 
-Hexa-data gère les jetons de façon automatique afin de simplifier l'usage de WarpScript et d'augmenter le niveau de sécurité. Les jetons générés disposent d'une durée de vie de 24 heures.
+Chaque projet Hexa-data dispose d'une paire de jetons (un jeton de lecture et un d'écriture), accessibles dans la page ```Paramètres``` du projet. Les jetons du projet son générés automatiquement par Hexa-data toutes les 24 heures et disposent d'une durée de vie de 24 heures.
 
-Chaque projet Hexa-data dispose d'une paire de jetons (un jeton de lecture et un d'écriture), accèssibles dans la page ```Paramètres``` du projet. Les jetons du projet son générés automatiquement par Hexa-data toutes les 24 heures et disposent d'une durée de vie de 24 heures.
-
-Pour simplifier l'usage de ces jetons leurs valeurs peuvent être remplacés par les variables ```$readToken``` et ```$writeTohen```
+Pour simplifier l'usage de ces jetons, leurs valeurs peuvent être remplacées par les variables ```$readToken``` et ```$writeTohen```
 
 ### Exemple:
 
-L'exemple ci-dessous demontre l'usage de la fonction FETCH permettant de requeter des variables / GTS sur les deux derniers jours.
+L'exemple ci-dessous démontre l'usage de la fonction FETCH, permettant de requêter des variables / GTS sur les deux derniers jours.
 
 #### Avec le jeton de lecture
 
@@ -50,7 +48,7 @@ L'usage de la variable ```$readToken``` améliore la lisibilité et rend le scri
 
 ## La langue de l'utilisateur
 
-La variable ```$language``` contient la le nom de la description à utiliser pour l'utilisateur qui execute la macro.
+La variable ```$language``` contient le nom des descriptions à utiliser pour l'utilisateur qui éxécute la macro.
 
 ### Exemple
 
@@ -66,19 +64,19 @@ $language
 'descriptionL1'
 ```
 
-Cette variable permet de savoir laquelle des trois langue paramètré sur le projet correspond à l'utilisateur.
+Cette variable permet de savoir laquelle des trois langues paramétrées sur le projet correspond à l'utilisateur.
 Les tableaux de bord peuvent donc utiliser cette variable pour afficher les bonnes descriptions de variables / GTS sur les graphiques.
 
 
-## Usage des paramètre QueryString dans les tableaux de bord
+## Usage des paramètres QueryString dans les tableaux de bord
 
-Les [queryString](https://en.wikipedia.org/wiki/Query_string) sont des paramètres qui peuvent être passés dans une url. Les script utilisés par les tableaux de bord disposent à l'execution de variables correspondant au différents paramètre passés dans l'URL de la page.
+Les [queryString](https://en.wikipedia.org/wiki/Query_string) sont des paramètres qui peuvent être passés dans une url. Les scripts utilisés par les tableaux de bord disposent, à l'éxécution, de variables correspondant aux différents paramètres passés dans l'URL de la page.
 
 ### Exemple:
 
 La tuile de type ```display``` affiche le contenu de la variable ```$messageTest```
 
-Lorsque le tableaux de bord est appellé avec l'URL ```https://beta.hexa-data.fr/projects/1/dashboards/32?messageTest=Hello%20World```, la tuile affiche ```Hello World```.
+Lorsque le tableau de bord est appellé avec l'URL ```https://beta.hexa-data.fr/projects/1/dashboards/32?messageTest=Hello%20World```, la tuile affiche ```Hello World```.
 
 ![queryString](./_medias/queryString.png)
 
