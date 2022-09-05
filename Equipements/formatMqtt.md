@@ -11,10 +11,10 @@ HDM est un format simple et ouvert, basé sur JSON, developpé pour Hexa-data po
 
 Les topic de messages MQTT s'assemblent de la manière suivante:
 
-* Messages montants (de l'équipement vers Hexa-data): HD/[namespace]/up
-* Messages descendants (d'Hexa-data vers l'équipement): HD/[namespace]/down
+* Messages montants (de l'équipement vers Hexa-data): HD/[clientID]/up
+* Messages descendants (d'Hexa-data vers l'équipement): HD/[clientID]/down
 
-Lors de sa création dans Hexa-data, un équipement se voit attribuer un ```namespace```. Ce```namespace``` est immuable et dérivé du nom initial donné à l'équipement.
+Pour la connexion MQTT, un équipement doit possèder un clientID, qui doit être défini dans la page d'édition de l'équipement.
 
   Ex: L'équipement nommé "ma passerelle" disposera du namespace ```maPasserelle```.
 

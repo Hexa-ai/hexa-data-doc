@@ -1,4 +1,4 @@
-* [Accueil](/)
+* [Accueil](/README.md)
 
 * Démarrage rapide
     * [   - Première connexion](/demarrageRapide/premiereConnexion.md)
