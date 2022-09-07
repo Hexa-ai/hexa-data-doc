@@ -10,7 +10,7 @@
 
 
 [Hexa-AI](https://hexa-ai.fr)
-[Demarrage rapide](connexion.md)
+[Demarrage rapide](./demarrageRapide/premiereConnexion.md)
 
 
 

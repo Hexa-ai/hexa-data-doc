@@ -9,7 +9,7 @@ Le projet est la base d'une application Hexa-data. Tout équipement, variable ou
 3. Ajouter un projet
 
 
-## Le éléments d'un projet
+## Les éléments d'un projet
 
 ![infos projet](./_medias/infosProjet.png)
 

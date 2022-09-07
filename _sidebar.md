@@ -17,7 +17,6 @@
     * Node-Red
         * [   - Connexion Node-Red](/Equipements/connexionNodeRed.md)
         * [   - Utilisation du noeud hd-up](/Equipements/NoeudNodeRed.md)
-
 * Variables / GTS
     * [   - Introduction](/Variables/introduction.md)
     * [   - Ajout / édition](/Variables/ajout.md)
@@ -26,6 +25,9 @@
     * [   - Introduction](/Macros/introduction.md)
     * [   - Ajout / édition](/Macros/ajout.md)
     * [   - Variables spéciales](/Macros/variablesProjet.md)
+    * API WarpScript / Hexa-data
+        * [   - Rapports](/Fichiers/hdApiReport.md)
+        * [   - Messages descendants (MQTT)](/Equipements/hdApiDeviceMsgDown.md)
 * Tableau de bord
     * [   - Introduction](./Dashboards/introduction.md)
     * [   - Edition d'une tuile](./Dashboards/editionTuile.md)
@@ -47,4 +49,6 @@
         * [   - Svg ](./Dashboards/widgets/svg.md)
         * [   - Csv-export ](./Dashboards/widgets/export_csv.md)
 
+* [   - Documents](./Fichiers/documents.md)
+* [   - Rapports](./Fichiers/rapports.md)
   
