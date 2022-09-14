@@ -3,7 +3,7 @@
 Les macros sont des scripts écrits en langage [WarpScript](https://www.warp10.io/content/03_Documentation/04_WarpScript/).
 Ces scripts permettent d'interagir avec les données et avec l'extérieur.
 
-Les macros peuvent être utilisées de différentes manières dans Hexa-data:
+Les macros peuvent être utilisées de différentes manières dans Hexa-data :
 
 * Appel cyclique sur intervalle de temps.
 * Appel depuis une tuile d'un tableau de bord.
@@ -13,7 +13,7 @@ Les macros permettent de requêter la base de données WARP10 et de travailler s
 
 ## Le langage WarpScript
 
-Le langage WarpScript dispose de plus de 1000 fonctions natives et permet entre autres de:
+Le langage WarpScript dispose de plus de 1000 fonctions natives et permet entre autres de :
 
 * Récupérer, supprimer ou modifier des enregistrements.
 * Réorganiser les enregistrements dans le temps (combler des trous, aligner les timestamp, créer des points intermédiaires).

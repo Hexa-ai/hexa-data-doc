@@ -1,14 +1,14 @@
 # Documents
 
-L'application Hexa-data parmet par projet de sotcker des fichiers (pdf, txt, bmp, word, xlsx...).
-L'accès à ces fichiers est disponible en téléchargment pour tout les lutilisateurs du projet. L'ajout et la suppression de document est disponible seulement pour les utilisateurs avec le role ```Editeur```.
+L'application Hexa-data permet de stocker des fichiers par projet (pdf, txt, bmp, word, xlsx...).
+L'accès à ces fichiers est disponible en téléchargment pour tout les utilisateurs du projet. L'ajout et la suppression de document est disponible seulement pour les utilisateurs avec le role ```Editeur```.
 
 
 ![Documents](./_medias/Documents.png)
 
-1. Zone de téléchargment (cliquer ou glisser déposer)
+1. Zone de téléchargement (cliquer ou glisser déposer)
 2. Bouton de navigation (accès à la page documents)
-3. Liste des fichier disponibles
+3. Liste des fichiers disponibles
 4. Taille du fichier
-5. Boutton de suppression
+5. Bouton de suppression
 6. Champ de recherche

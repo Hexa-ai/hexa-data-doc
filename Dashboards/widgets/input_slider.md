@@ -1,6 +1,6 @@
 # Slider
 
-## Paramètres spécifique au widget ```input``` ( attribut ```input``` de ```globalParams```)
+## Paramètres spécifiques au widget ```input``` ( attribut ```input``` de ```globalParams```)
 
 | Attribut         | Type    | Description                       |
 |------------------|---------|-----------------------------------|

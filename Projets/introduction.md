@@ -13,13 +13,13 @@ Le projet est la base d'une application Hexa-data. Tout équipement, variable ou
 
 ![infos projet](./_medias/infosProjet.png)
 
-1. Page d'acceuil du projet
-2. Page des tableaux de bords
+1. Page d'accueil du projet
+2. Page des tableaux de bord
 3. Tableaux de bord favoris
 4. Page des équipements
 5. Page des variables
 6. Page des Macros
 7. Page de gestion des utilisateurs
 8. Paramètres du projet
-9. informations, page d'acceuil du projets
-10. Carte des équipments (dont les coordonnées GPS on étés saisies)
+9. Informations, page d'accueil du projet
+10. Carte des équipments (dont les coordonnées GPS on été saisies)

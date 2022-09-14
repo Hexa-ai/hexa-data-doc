@@ -13,7 +13,7 @@
 | ```label``` | booléen | Text à afficher sur le bouton   |
 
 
-## Exemple d'un champd de saisie simple
+## Exemple d'un champ de saisie simple
 
 <div style="width: 200px; height:50px;">
 <discovery-tile url="https://sandbox.senx.io/api/v0/exec" type="input:date">
@@ -52,7 +52,7 @@
 </warp-view-editor>
 </div>
 
-## Exemple d'un champd de saisie avec confirmation
+## Exemple d'un champ de saisie avec confirmation
 
 <div style="width: 300px; height:50px;">
 <discovery-tile url="https://sandbox.senx.io/api/v0/exec" type="input:date">
@@ -91,7 +91,7 @@
 </warp-view-editor>
 </div>
 
-## Exemple d'un champd de saisie de plage (```ìnput:date-range```)
+## Exemple d'un champ de saisie de plage (```ìnput:date-range```)
 
 <div style="width: 300px; height:50px;">
 <discovery-tile url="https://sandbox.senx.io/api/v0/exec" type="input:date-range">

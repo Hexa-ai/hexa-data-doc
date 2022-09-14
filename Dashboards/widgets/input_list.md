@@ -94,7 +94,7 @@
 </warp-view-editor>
 </div>
 
-## Exemple d'une liste déroulante avec auto complètion ```input:autocomplete```
+## Exemple d'une liste déroulante avec auto-complètion ```input:autocomplete```
 
 <div style="width: 200px; height:50px;">
 <discovery-tile url="https://sandbox.senx.io/api/v0/exec" type="input:autocomplete">

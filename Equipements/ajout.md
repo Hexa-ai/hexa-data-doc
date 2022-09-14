@@ -5,7 +5,7 @@ Les équipements permettent de remonter des données dans Hexa-data. Un équipem
 * Disposer d'un client MQTT
 * Respecter le [formatage](./formatMqtt.md) attendu par Hexa-data
 
-## Bibliothèque officielles
+## Bibliothèques officielles
 
 actuellement deux bibliothèques prêtes à l'emploi sont disponibles.
 

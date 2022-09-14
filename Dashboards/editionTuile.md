@@ -45,11 +45,11 @@ La syntaxe doit correspondre à un object clés/valeur au format JSON.
 
 ```{"consigne": 18}```
 
-Initilise la variable ```$consigne``` à 18.
+Initailise la variable ```$consigne``` à 18.
 
 ```{"consigne": 18, "name": "Robert"}```
 
-Initilise la variable ```$consigne``` à 18 ainsi que la variable ```$name``` à ```Robert```
+Initailise la variable ```$consigne``` à 18 ainsi que la variable ```$name``` à ```Robert```
 
 
 

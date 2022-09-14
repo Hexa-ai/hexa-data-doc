@@ -1,6 +1,6 @@
 # Display
 
-La tuile de type display permet d'afficher du texte ou du HTML. Avec cette tuile il est possible:
+La tuile de type display permet d'afficher du texte ou du HTML. Avec cette tuile il est possible :
  * Afficher la derniere valeur d'une variable/GTS
  * Afficher le resultat d'une macro
  * Générer un lien hypertexte
@@ -48,7 +48,7 @@ Dans cet example nous utilisons la macro ```@utils/getWather``` pour récupèrer
 </discovery-tile>
 </div>
 
-La macro ```@utils/getWather``` récupère les informations météo aux coordonnées GPS ```48.609539 -2.494735```. L'exemeple recupère ensuite l'attribut ```temp``` de la map ```main``` afin de n'afficher que la température.
+La macro ```@utils/getWather``` récupère les informations météo aux coordonnées GPS ```48.609539 -2.494735```. L'exemple récupère ensuite l'attribut ```temp``` de la map ```main``` afin de n'afficher que la température.
 
 ?> Dans l'exemple ci-dessous ```xxxOpenWeatherTokenxxx``` est à remplacer par un jeton [OpenWeather](https://openweathermap.org/) valide.
 

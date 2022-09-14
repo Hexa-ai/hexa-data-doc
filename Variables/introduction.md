@@ -9,7 +9,7 @@ Cette base de données est l'élément central de l'application, car responsable
 
 Chaque variable remontée dans l'application est une GTS (Geo Time Serie) au sens WARP10.
 
-Le nom defini dans Hexa-data correspond au classname de la GTS.
+Le nom défini dans Hexa-data correspond au class name de la GTS.
 
 ## Variable / GTS
 
@@ -17,22 +17,22 @@ Une variable (GTS au sens WARP10) permet de représenter une mesure dans le temp
 
 ### Structure d'une variable / GTS
 
-* Classname
+* class name
 
-    Représente le nom de la variable / GTS (Ex: ```batimentA.rdc.mesure.temperature``` )
+    Représente le nom de la variable / GTS (Ex : ```batimentA.rdc.mesure.temperature``` )
 
-!> _Important_ Le classname est immuable, une variable ne peut donc pas être renommée.
+!> _Important_ Le class name est immuable, une variable ne peut donc pas être renommée.
 
 * Labels
 
     Représente les caractéristiques de la variable / GTS
-    Dans Hexa-data les labels des variables sont créés automatiquement en fonction de la nomenclature de la variable (classname). Lorsque que le nom de la variable contient des ```.``` chaque sous-chaine correspond à la valeur d'un label de l-0 à l-(n-1).
+    Dans Hexa-data les labels des variables sont créés automatiquement en fonction de la nomenclature de la variable (class name). Lorsque que le nom de la variable contient des ```.``` chaque sous-chaine correspond à la valeur d'un label de l-0 à l-(n-1).
 
 !> _Important_ Les labels sont des caractéristiques immuables.
 
-    Ex:
+    Ex :
 
-    Nom de la variable:  ```batimentA.rdc.mesure.temperature```
+    Nom de la variable :  ```batimentA.rdc.mesure.temperature```
 
     Labels générés par Hexa-data: ```"l-0" = "batimentA", "l-1" = "rdc", "l-2" = "mesure", "l-3" = "temperature"```
 

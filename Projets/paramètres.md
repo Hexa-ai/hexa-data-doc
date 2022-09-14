@@ -1,11 +1,11 @@
 # Paramètres d'un projet
 
-La page paramètre d'un projet permet:
+La page ```Paramètres``` d'un projet permet :
 
 * D'éditer la définition d'un projet
 * De récupèrer les jetons de lecture et d'écriture
 * De sauvegarder et restaurer le projet
-* De sauvergarder et restaurer les données du projet
+* De sauvegarder et restaurer les données du projet
 
 ![paramètre projet](./_medias/param%C3%A8tresProjet.png)
 
@@ -29,7 +29,7 @@ La page paramètre d'un projet permet:
 
 La page ```jetons``` permet de récupèrer les jetons de lecture et d'écriture du projet. Ces jetons permettent l'exploitation de la base de données Warp10 depuis l'exterieur d'Hexa-data.
 
-## Sauvegarde et restauration d'un projet et de ces données
+## Sauvegarde et restauration d'un projet et de ses données
 
 ![import export projet](./_medias/importExportProjet.png)
 
@@ -39,4 +39,4 @@ La page ```jetons``` permet de récupèrer les jetons de lecture et d'écriture 
 4. Commande d'export des données
 5. Import du projet (Equipements, Variables, Macros, Tableaux de bord)
 6. Choix du format de commande d'import des données aux formats CURL et Invoke-WebRequest (Windows Power shell version >= 7.0.0)
-7. Commande d'export des données (La commande doit être executée dans le repertoire ou se trouve le fichier export.mc2)
+7. Commande d'import des données (La commande doit être exécutée dans le répertoire ou se trouve le fichier export.mc2)

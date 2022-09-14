@@ -26,4 +26,4 @@ Taper dans la barre de recherche ```@hexa-ai/node-red-contrib-hexa-data-connecto
     * Le champ ```type``` correspond au type de la variable (```real```, ```integer```, ```boolean```, ```string```).
 
 * Le Noeud ```hd-up``` gère le buffer et la mise en forme des messages pour Hexa-data.
-* Le Noeud ```mqtt out```est le client MQTT précedemment paramétré.
+* Le Noeud ```mqtt out``` correspond au client MQTT précédemment paramétré.

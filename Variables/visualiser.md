@@ -3,7 +3,7 @@
 Cliquer sur une variable dans la page des variables pour aller sur sa vue.
 Dans cette page il est possible de visualiser éditer ou supprimer une variable.
 
-## Visualier le valeurs
+## Visualier les valeurs
 
 Par défaut, la courbe affiche l'historique des trois dernières heures. Le sélecteur permet de choisir prciésement l'historique à afficher.
 Si la plage demandée dépasse 10 000 points, les données sont sous-échantillonées selon l'algorithme [LTTB](https://skemman.is/bitstream/1946/15343/3/SS_MSthesis.pdf) (Largest Triangle Three Buckets).

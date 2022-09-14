@@ -1,6 +1,6 @@
 # Modifier son mot de passe administrateur
 
-Après la premiere connexion, se rendre dans le menu utilisateur de l'application et créer un nouvel administrateur.
+Après la première connexion, se rendre dans le menu ```Utilisateurs``` de l'application et créer un nouvel administrateur.
 
 ![utilisateurs](./_media/changeMotDePasse.png ':size=70%')
 

@@ -2,8 +2,8 @@
 
 ## Introduction
 
-Les rapports sont des fichiers générés par les Macros WarpScript. Ces fichiers sont téléchargeable par l'utilisateur dans le menu ```Rapports```.
-Les utilisateurs avec le role ```Editeur``` peuvent supprimer ces fichiers depuis la page ```Rapports```.
+Les rapports sont des fichiers générés par les Macros WarpScript. Ces fichiers sont téléchargeables par l'utilisateur dans le menu ```Rapports```.
+Les utilisateurs avec le rôle ```Editeur``` peuvent supprimer ces fichiers depuis la page ```Rapports```.
 
 ![Rapport](./_medias/Rapports.png)
 
@@ -11,7 +11,7 @@ Les utilisateurs avec le role ```Editeur``` peuvent supprimer ces fichiers depui
 2. Liste des fichier disponibles
 3. Champ de recherche
 4. Taille du fichier
-5. Boutton de suppression
+5. Bouton de suppression
 
 ## API WarpScript
 

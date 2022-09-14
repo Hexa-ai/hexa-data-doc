@@ -7,7 +7,7 @@
     * [   - Connecter un équipement](/Equipements/ajout.md)
 * Projets
     * [   - Introduction](/Projets/introduction.md)
-    * [   - Pramètres projet](/Projets/param%C3%A8tres.md)
+    * [   - Paramètres projet](/Projets/param%C3%A8tres.md)
 * Equipements
     * [   - Ajout / modification / suppression](/Equipements/ajout.md)
     * [   - Format HDM MQTT](/Equipements/formatMqtt.md)

@@ -21,7 +21,7 @@ Continum est un mode glisser-déposer permettant de construire et de modifier ra
 
 L'éditeur permet de déposer des tuiles sur la grille
 
-Dans la page des tableaux de bord, créer un nouveau ou cliquer sur le bouton modifier d'un existant.
+Dans la page des tableaux de bord, créer un nouveau ou cliquer sur le bouton ```Modifier``` d'un existant.
 
 ![tableau de bord formulaire](./_medias/tableauxBordpngForm.png)
 
@@ -39,6 +39,6 @@ Dans la page des tableaux de bord, créer un nouveau ou cliquer sur le bouton mo
 4. Ouvrir le popup d'édition de la tuile.
 5. Supprimer la tuile.
 6. Redimenssioner la tuile
-7. Inserer une nouvelle tuile.
+7. Insérer une nouvelle tuile.
 8. Annuler ou enregistrer les modifications.
 

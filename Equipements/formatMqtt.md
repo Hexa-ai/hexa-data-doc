@@ -1,15 +1,15 @@
 # Format HDM MQTT
 
 La connexion avec les équipements s'effectue selon le protocole MQTT.
-Le protocole MQTT étant plutôt ouvert, concernant le fomattage des données, nous avons donc défini un formatage performant et simple à implémenter : HDM.
+Le protocole MQTT étant plutôt ouvert, concernant le formatage des données, nous avons donc défini un formatage performant et simple à implémenter : HDM.
 
 ## Histrorical data metric format (HDM)
 
-HDM est un format simple et ouvert, basé sur JSON, developpé pour Hexa-data pour remonter des mesures horodatées et par paquets de plusieurs mesures.
+HDM est un format simple et ouvert, basé sur JSON, développé pour Hexa-data pour remonter des mesures horodatées et par paquets de plusieurs mesures.
 
 ## Topic
 
-Les topic de messages MQTT s'assemblent de la manière suivante:
+Les topics de messages MQTT s'assemblent de la manière suivante :
 
 * Messages montants (de l'équipement vers Hexa-data): HD/[clientID]/up
 * Messages descendants (d'Hexa-data vers l'équipement): HD/[clientID]/down

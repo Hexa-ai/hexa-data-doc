@@ -29,10 +29,10 @@ L'attribut ```globalParams``` regroupes les paramètres liés à la tuile.
 
 ## Evènements (```events```)
 
-L'attribut ```events``` est un tableaux de Maps decriment chacune un évènement à emettre.
-Ces évenement peuvent ensuite être écouté par les autre tuile du tableau de bord.
+L'attribut ```events``` est un tableau de Maps décrivant chacune un évènement à emettre.
+Ces évenements peuvent ensuite être écouté par les autre tuiles du tableau de bord.
 
-### Structure d'un évenement
+### Structure d'un évènement
 
 | Attribut       | Type     | Description                                                                                                                        | Valeurs         |
 |----------------|----------|------------------------------------------------------------------------------------------------------------------------------------|-----------------|
@@ -42,9 +42,9 @@ Ces évenement peuvent ensuite être écouté par les autre tuile du tableau de 
 | ```value```    |          | Valeur à envoyer dans le cas du type ```data```                                                                                    |                 |
 
 
-Le type d'évenement ```variable``` envoie les données de la tuile dans une variable dont le nom est donné avec l'attribut ```selector```
+Le type d'évènement ```variable``` envoie les données de la tuile dans une variable dont le nom est donné avec l'attribut ```selector```
 
-Le type d'évenement ```data``` envoie une variable qui sera traité comme étant le résultat de l'attribut ```data``` de la tuile réceptrice. la variable à envoyer passe par l'attribut ```value```. 
+Le type d'évènement ```data``` envoie une variable qui sera traité comme étant le résultat de l'attribut ```data``` de la tuile réceptrice. la variable à envoyer passe par l'attribut ```value```. 
 ### Paramètre de données (```params```)
 
 Ces paramètre sont propre aux tuile affichant plusieurs Variables / GTS.
