@@ -10,7 +10,7 @@ Les équipements permettent de remonter des données dans Hexa-data. Un équipem
 actuellement deux bibliothèques prêtes à l'emploi sont disponibles.
 
 * Noeud Node-Red [node-red-contrib-hexa-data-connector](https://flows.nodered.org/node/@hexa-ai/node-red-contrib-hexa-data-connector)
-* Bibliothèque Codesys 3.5 / e!COCKPIT (WAGO Contact) [codesys-hexa-data-connector](https://gitlab.com/julien.talbourdet/codesys-hexa-data-connector/-/package_files/48640460/download)
+* Bibliothèque Codesys 3.5 / e!COCKPIT (WAGO Contact) [codesys-hexa-data-connector](https://gitlab.com/julien.talbourdet/codesys-hexa-data-connector/-/package_files/53411507/download)
 
 
 
