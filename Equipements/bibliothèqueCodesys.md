@@ -1,8 +1,12 @@
-# Utilisation de la bibliothèque Codesys 3.5
+# Utilisation de la bibliothèque CODESYS 3.5
 
-La bibliothèque Codesys 3.5 peut-être utilisée sur Codesys, mais aussi d'autres environnements dérivés de Codesys, comme par exemple e!COCKPIT pour les automates de la marque WAGO. Cette bibliothèque a été développée dans Codesys 3.5 SP18 et testée dans e!COCKPIT avec un automate WAGO PFC200. Elle devrait aussi fonctionner sur d'autres environnements comme TwinCAT3.
+La bibliothèque CODESYS 3.5 doit être couplée avec une bibliothèque client MQTT.
+
+CODESYS commercialise une bibliothèque IIOT disposant d'un client MQTT sur le [CODESYS Store](https://store.codesys.com/en/iiot-libraries-sl.html).
 
 Afin de permettre l'interopérabilité avec plusieurs constructeurs, la bibliothèque se concentre uniquement sur le formatage du payload.
+
+[hexa-data-connector-1-0-3.compiled-library](https://gitlab.com/julien.talbourdet/codesys-hexa-data-connector/-/package_files/53439903/download)
 
 ## 1. Importer la bibliothèque avec le gestionnaire de bibliothèque Codesys.
 

@@ -13,7 +13,8 @@
     * [   - Format HDM MQTT](/Equipements/formatMqtt.md)
     * Automates Codesys 3.5
         * [   - Connexion automate WAGO](/Equipements/connexionWago.md)
-        * [   - Utilisation bibliothèque Codesys](/Equipements/bibliothèqueCodesys.md)
+        * [   - Bibliothèque Codesys](/Equipements/bibliothèqueCodesys.md)
+        * [   - Bibliothèque Codesys WAGO](/Equipements/biblioth%C3%A8queCodesysWago.md)
     * Node-Red
         * [   - Connexion Node-Red](/Equipements/connexionNodeRed.md)
         * [   - Utilisation du noeud hd-up](/Equipements/NoeudNodeRed.md)
