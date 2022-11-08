@@ -3,7 +3,7 @@
 La bibliothèque Codesys 3.5 WAGO peut-être utilisée sur Codesys ou e!COCKPIT avec des automates de marque WAGO uniquement.
 Cette bibliothèque intègre la liaison avec le module CloudConnectivy de WAGO afin d'en simplifier l'intégration.
 
-[hexa-data-connector-wago-0-0-1.compiled-library](https://gitlab.com/julien.talbourdet/codesys-hexa-data-connector-wago/-/package_files/53631149/download)
+[hexa-data-connector-wago-0-0-2.compiled-library](https://gitlab.com/julien.talbourdet/codesys-hexa-data-connector-wago/-/package_files/58880871/download)
 
 ## 1. Importer la bibliothèque avec le gestionnaire de bibliothèque Codesys.
 
